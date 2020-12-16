@@ -1,0 +1,30 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    background: url('../../images/background.jpg');
+
+}
+
+@media(min-width: 550px) {
+    .chat {
+        width: 60%;
+        height: 70vh;
+        box-shadow: 1px 1px 20px lightgray;
+        border-radius: 5px;
+    }
+
+    .chatCon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
+
+@media(min-width: 800px) {
+    .chat {
+        width: 45%;
+    }
+}

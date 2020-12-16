@@ -1,0 +1,75 @@
+.textfield form {
+    display: flex;
+    margin: 0;
+}
+
+.send {
+    background-color: dodgerblue;
+    color: white;
+    outline: none;
+    border-radius: 50%;
+    margin: 0 15px 3px 10px;
+    border: none;
+    height: 47px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px lightgray;
+}
+
+.textfield .inputCon {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding-left: 7px;
+    padding-bottom: 10px;
+}
+
+.textfield .inputLeft {
+    background-color: #d4eaff;
+    flex: 1;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 1px 1px 20px lightgray;
+    display: flex;
+}
+
+.textfield input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 15px 15px 15px 25px;
+    font-family: inherit;
+    font-size: 17px;
+    flex: 1;
+}
+
+.textfield .inputCon .MuiSvgIcon-root {
+    color: #7dbeff;
+}
+
+.picker {
+    display: none;
+    position: fixed;
+    bottom: 65px;
+}
+
+.picker-open {
+    display: flex;
+}
+
+@media(min-width: 550px) {
+    .textfield input {
+        border-radius: 0 0 0 5px;
+    }
+
+    .textfield form {
+        margin: 0;
+        padding: 0; 
+    }
+
+    .picker {
+        bottom: 22%;
+    }
+}

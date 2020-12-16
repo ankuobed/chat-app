@@ -1,0 +1,60 @@
+.infobarCon {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.infobar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 0 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.room {
+    margin: 0;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.users {
+    padding: 0 20px 7px 20px;
+    overflow: auto;
+}
+
+.onlineUser {
+    margin-right: 10px;
+    color: whitesmoke;
+    font-size: 15px;
+    background-color: #14589c;
+    padding: 2px 7px;
+    border-radius: 7px;
+}
+
+.infobar div {
+    display: flex;
+    align-items: center;
+}
+
+.online {
+    width: 10px;
+    height: 10px;
+    background-color: lightgreen;
+    border-radius: 50%;
+}
+
+.infobar div h4 {
+    margin-left: 20px;
+}
+
+.infobar .MuiSvgIcon-root {
+    color: white;
+}
+
+@media(min-width: 550px) {
+    .infobarCon {
+        border-radius: 5px 5px 0 0;
+    }
+}

@@ -1,0 +1,55 @@
+.message {
+    margin-bottom: 15px;
+}
+
+.message p {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 0 7px 7px 7px;
+    margin: 0;
+}
+
+.message small {
+    margin: 0;
+    color: dodgerblue;
+    margin-left: -12px;
+    margin-top: -4px;
+    margin-bottom: 3px;
+}
+
+.sent-by-user {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sent-by-user p {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 7px 0 7px 7px;
+    padding: 7px 15px;
+}
+
+.sent-by-user small {
+    display: none;
+}
+
+.sent-by-admin {
+    display: flex;
+    justify-content: center;
+}
+
+.sent-by-admin p {
+    font-size: small;
+    background-color: #bddeff;
+    padding: 3px 10px;
+    border-radius: 0 0 5px 5px;
+    color: black;
+}
+
+.sent-by-admin small {
+    display: none;
+}

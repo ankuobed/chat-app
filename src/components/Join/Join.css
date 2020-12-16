@@ -1,0 +1,58 @@
+.join {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 0 10px;
+}
+
+.join h1 {
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-size: 42px;
+    color: #0067ce;
+}
+
+.join form {
+    display: flex;
+    flex-direction: column;
+}
+
+.join .inputCon {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 13px;
+}
+
+.join input {
+    padding: 10px 14px;
+    font-size: medium;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-family: inherit;
+    outline: dodgerblue;
+}
+
+.join small {
+    color: gray;
+    margin-top: 5px;
+}
+
+.join button {
+    width: 100%;
+    font-family: inherit;
+    font-size: large;
+    padding: 10px 0;
+    margin-top: 10px;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+@media(min-width: 500px) {
+    .join {
+        width: 450px;
+    }
+}

@@ -1,0 +1,17 @@
+body {
+    font-family: raleway;
+    margin: 0;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url('./fonts/Raleway-Regular.ttf')
+}
+
+.container {
+    padding: 0 3%;
+}
+
+input {
+    outline: none;
+}
