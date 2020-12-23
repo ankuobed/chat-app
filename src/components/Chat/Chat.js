@@ -14,8 +14,8 @@ function Chat({ location }) {
     const [room, setRoom] = useState('')
     const [messages, setMessages] = useState([])
     const [users, setUsers] = useState([])
-   
-    const ENDPOINT = 'localhost:5000'
+
+    const ENDPOINT = 'https://chat-app--server.herokuapp.com/'
 
     useEffect(() => {
         const { name, room } = queryString.parse(location.search)
@@ -23,9 +23,9 @@ function Chat({ location }) {
         setRoom(room)
 
         socket = io(ENDPOINT)
-        socket.emit('join', { name, room }, () => {})
+        socket.emit('join', { name, room }, () => { })
 
-        socket.on('roomData', ({room, users}) => {
+        socket.on('roomData', ({ room, users }) => {
             setUsers(users)
         })
 
@@ -37,7 +37,7 @@ function Chat({ location }) {
 
     useEffect(() => {
         socket.on('message', (m) => {
-             setMessages([...messages, m])
+            setMessages([...messages, m])
         })
     }, [messages])
 
@@ -45,13 +45,13 @@ function Chat({ location }) {
         <div className='chatCon'>
             <div className='chat'>
                 <InfoBar
-                    room={room} 
-                    name={name} 
-                    users={users} 
+                    room={room}
+                    name={name}
+                    users={users}
                 />
 
-                <MessageList 
-                    messages={messages} 
+                <MessageList
+                    messages={messages}
                     name={name}
                 />
 
