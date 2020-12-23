@@ -8,8 +8,8 @@ const TextField = ({ socket }) => {
 
     const sendMessage = (e) => {
         e.preventDefault()
-        if(message) {
-             socket.emit('sendMessage', message, () => setMessage(''))
+        if (message) {
+            socket.emit('sendMessage', message, () => setMessage(''))
         }
     }
 
@@ -19,15 +19,14 @@ const TextField = ({ socket }) => {
                 <div className='inputCon'>
                     <div className='inputLeft'>
                         <input
-                            value={message} 
+                            value={message}
                             onChange={(e) => setMessage(e.target.value)}
                             placeholder='Type a message...'
-                            autoFocus
                         />
                     </div>
                 </div>
 
-                <button  className='send'><SendRounded /></button>
+                <button className='send'><SendRounded /></button>
             </form>
         </div>
     )
