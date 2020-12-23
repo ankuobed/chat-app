@@ -8,27 +8,27 @@ function Join() {
     const [room, setRoom] = useState('')
 
     return (
-        <div className='container'>
+        <div className='container center'>
             <div className='join'>
                 <h1>Join a chat room</h1>
                 <form>
                     <div className='inputCon'>
-                        <input 
-                            placeholder='name' 
+                        <input
+                            placeholder='name'
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             autoFocus
                         />
                     </div>
                     <div className='inputCon'>
-                        <input  
-                            placeholder='room' 
+                        <input
+                            placeholder='room'
                             value={room}
                             onChange={(e) => setRoom(e.target.value)}
                         />
                         <small>the room you want to join</small>
                     </div>
-                    <Link onClick={e => (!name || !room)&& e.preventDefault()} to={`/chat?name=${name}&room=${room}`}>
+                    <Link onClick={e => (!name || !room) && e.preventDefault()} to={`/chat?name=${name}&room=${room}`}>
                         <button>Join</button>
                     </Link>
                 </form>
