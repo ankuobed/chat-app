@@ -1,6 +1,9 @@
 .infobarCon {
     background-color: dodgerblue;
     color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .infobar {
@@ -8,9 +11,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px 0 20px;
-    position: sticky;
-    top: 0;
-    left: 0;
 }
 
 .room {
