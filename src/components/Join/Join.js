@@ -10,7 +10,7 @@ function Join() {
     return (
         <div className='container center'>
             <div className='join'>
-                <h1>Join a chat room</h1>
+                <h1>Join or create a chat room</h1>
                 <form>
                     <div className='inputCon'>
                         <input
