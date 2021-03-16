@@ -26,7 +26,7 @@ function Join() {
                             value={room}
                             onChange={(e) => setRoom(e.target.value)}
                         />
-                        <small>the room you want to join</small>
+                        <small>the room you want to create or join</small>
                     </div>
                     <Link onClick={e => (!name || !room) && e.preventDefault()} to={`/chat?name=${name}&room=${room}`}>
                         <button>Join</button>
